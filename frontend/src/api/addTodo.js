@@ -17,3 +17,5 @@ export const addTodo = async (todo) => {
     const json = await response.json()
     return json
 }
+
+export default addTodo; 

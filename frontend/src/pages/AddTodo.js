@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { addTodo } from '../api/addTodo' 
 
 const AddTodo = () => {
     const [userInput, setUserInput] = useState("")
@@ -6,7 +7,7 @@ const AddTodo = () => {
     const handler = async (e) => {
         e.preventDefault()
         // what function will run?
-        let response = await 
+        let response = await addTodo(userInput)
         console.log(response)
     }
 
